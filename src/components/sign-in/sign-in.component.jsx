@@ -21,7 +21,7 @@ class SignIn extends Component {
         event.preventDefault();
 
         const { email, password } = this.state;
-        
+
         try {
             await auth.signInWithEmailAndPassword(email, password);
             this.setState({email: '', password: ''});
@@ -66,7 +66,11 @@ class SignIn extends Component {
                             Sign In
                         </CustomButton>
 
-                        <CustomButton onClick={signInWithGoogle} isGoogleSignIn>
+                        <CustomButton
+                            type='button'
+                            onClick={signInWithGoogle}
+                            isGoogleSignIn
+                        >
                             Sign In With Google
                         </CustomButton>
                     </div>
