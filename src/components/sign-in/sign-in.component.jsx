@@ -67,7 +67,6 @@ class SignIn extends Component {
                         </CustomButton>
 
                         <CustomButton
-                            type='button'
                             onClick={signInWithGoogle}
                             isGoogleSignIn
                         >
@@ -81,4 +80,4 @@ class SignIn extends Component {
     }
 }
 
-export default SignIn
+export default SignIn;
