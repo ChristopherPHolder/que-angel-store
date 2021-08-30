@@ -9,6 +9,7 @@ import HomePage from './pages/homepage/homepage.component';
 import ShopPage from './pages/shop/shop.component';
 import SignInAndSignUpPage from './pages/sign-in-and-sign-up/sign-in-and-sign-up.component';
 import { setCurrentUser } from './redux/user/user.actions';
+
 import './App.css'
 
 class App extends Component {
@@ -59,7 +60,6 @@ class App extends Component {
       </div>
     );
   }
-
 }
 
 const mapStateToProps = ({ user }) => ({
